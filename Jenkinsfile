@@ -27,7 +27,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Run application using Maven exec plugin
-                sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
+                sh 'mvn exec:java -Dexec.mainClass="com.example.app.App"'
             }
         }
     }
